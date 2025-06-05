@@ -2,123 +2,156 @@
 
 This repository contains a collection of commonly asked Python interview questions with multiple solution approaches, detailed explanations, and performance comparisons.
 
+## Repository Structure
+
+```
+python-interview-practice/
+├── arrays/                    # Array and list operations
+│   ├── find_max.py           # Finding maximum element
+│   ├── second_largest.py     # Finding second largest element
+│   ├── remove_duplicates.py  # Removing duplicate elements
+│   ├── merge_sorted_lists.py # Merging sorted lists
+│   ├── most_frequent.py      # Finding most frequent element
+│   └── pair_sum.py          # Finding pairs with target sum
+│
+├── strings/                  # String manipulation problems
+│   ├── reverse_string.py    # String reversal
+│   ├── is_palindrome.py     # Palindrome checking
+│   ├── is_anagram.py        # Anagram checking
+│   └── count_vowels.py      # Counting vowels
+│
+├── math/                    # Mathematical problems
+│   ├── factorial.py        # Factorial calculation
+│   ├── fibonacci.py        # Fibonacci sequence
+│   ├── is_prime.py        # Prime number checking
+│   └── sum_digits.py      # Sum of digits
+│
+├── dynamic_programming/    # Dynamic programming problems
+│   └── longest_common_subsequence.py  # LCS problem
+│
+├── searching_sorting/     # Searching and sorting algorithms
+│   └── binary_search.py  # Binary search implementations
+│
+└── oop/                  # Object-oriented programming
+    └── person_class.py   # Person class implementation
+```
+
 ## Questions Overview
 
-### Basic Data Structure Operations
-1. [Reverse String](reverse_string.py)
-   - Multiple approaches including slicing, loop, and recursion
-   - Time/Space complexity analysis
-   - Performance comparison
-
-2. [Find Maximum](find_max.py)
+### Arrays and Lists (`arrays/`)
+1. [Find Maximum](arrays/find_max.py)
    - Using built-in max()
    - Loop-based approach
    - Reduce function
    - Sorting approach
    - Recursive approach
 
-3. [Second Largest Number](second_largest.py)
+2. [Second Largest Number](arrays/second_largest.py)
    - Using set and sorting
    - Two-pointer technique
    - Heap-based approach
    - Binary search approach
 
-4. [Remove Duplicates](remove_duplicates.py)
+3. [Remove Duplicates](arrays/remove_duplicates.py)
    - Using set
    - Dictionary approach
    - Two-pointer technique
    - List comprehension
 
-### String Manipulation
-1. [Palindrome Check](is_palindrome.py)
-   - Two-pointer technique
-   - String reversal
-   - Recursive approach
-   - Advanced options (case-insensitive, ignore spaces)
-
-2. [Anagram Check](is_anagram.py)
-   - Sorting approach
-   - Character counting
-   - Dictionary-based
-   - XOR operation
-   - Using Counter class
-
-3. [Count Vowels](count_vowels.py)
-   - Using set
-   - Regular expressions
-   - Loop counting
-   - Filter function
-   - Detailed vowel analysis
-
-### Mathematical Problems
-1. [Factorial Calculation](factorial.py)
-   - Recursive approach
-   - Iterative approach
-   - Using reduce
-   - Math module
-   - Error handling
-
-2. [Fibonacci Sequence](fibonacci.py)
-   - Iterative approach
-   - Recursive approach
-   - Dynamic programming
-   - Generator function
-   - Matrix exponentiation
-
-3. [Prime Number Check](is_prime.py)
-   - Basic trial division
-   - Optimized trial division
-   - Sieve of Eratosthenes
-   - Miller-Rabin test
-   - Fermat test
-
-4. [Sum of Digits](sum_digits.py)
-   - String conversion
-   - Mathematical approach
-   - Recursive method
-   - Using reduce
-   - Detailed digit analysis
-
-### Array/List Operations
-1. [Merge Sorted Lists](merge_sorted_lists.py)
+4. [Merge Sorted Lists](arrays/merge_sorted_lists.py)
    - Two-pointer technique
    - Using heapq
    - Recursive approach
    - Built-in sorting
    - K-way merge
 
-2. [Most Frequent Element](most_frequent.py)
+5. [Most Frequent Element](arrays/most_frequent.py)
    - Using Counter
    - Dictionary counting
    - Sorting approach
    - Set operations
    - Frequency analysis
 
-3. [Pair Sum](pair_sum.py)
+6. [Pair Sum](arrays/pair_sum.py)
    - Two-pointer technique
    - Hash set approach
    - Binary search
    - Dictionary method
    - Detailed pair analysis
 
-### Searching and Sorting
-1. [Binary Search](binary_search.py)
+### String Manipulation (`strings/`)
+1. [Reverse String](strings/reverse_string.py)
+   - Multiple approaches including slicing, loop, and recursion
+   - Time/Space complexity analysis
+   - Performance comparison
+
+2. [Palindrome Check](strings/is_palindrome.py)
+   - Two-pointer technique
+   - String reversal
+   - Recursive approach
+   - Advanced options (case-insensitive, ignore spaces)
+
+3. [Anagram Check](strings/is_anagram.py)
+   - Sorting approach
+   - Character counting
+   - Dictionary-based
+   - XOR operation
+   - Using Counter class
+
+4. [Count Vowels](strings/count_vowels.py)
+   - Using set
+   - Regular expressions
+   - Loop counting
+   - Filter function
+   - Detailed vowel analysis
+
+### Mathematical Problems (`math/`)
+1. [Factorial Calculation](math/factorial.py)
+   - Recursive approach
+   - Iterative approach
+   - Using reduce
+   - Math module
+   - Error handling
+
+2. [Fibonacci Sequence](math/fibonacci.py)
    - Iterative approach
    - Recursive approach
-   - Using bisect module
-   - Custom comparator
-   - Finding insertion point
+   - Dynamic programming
+   - Generator function
+   - Matrix exponentiation
 
-### Dynamic Programming
-1. [Longest Common Subsequence](longest_common_subsequence.py)
+3. [Prime Number Check](math/is_prime.py)
+   - Basic trial division
+   - Optimized trial division
+   - Sieve of Eratosthenes
+   - Miller-Rabin test
+   - Fermat test
+
+4. [Sum of Digits](math/sum_digits.py)
+   - String conversion
+   - Mathematical approach
+   - Recursive method
+   - Using reduce
+   - Detailed digit analysis
+
+### Dynamic Programming (`dynamic_programming/`)
+1. [Longest Common Subsequence](dynamic_programming/longest_common_subsequence.py)
    - Dynamic programming approach
    - Recursive solution
    - Memoization
    - Space-optimized version
    - Using itertools
 
-### Object-Oriented Programming
-1. [Person Class Implementation](person_class.py)
+### Searching and Sorting (`searching_sorting/`)
+1. [Binary Search](searching_sorting/binary_search.py)
+   - Iterative approach
+   - Recursive approach
+   - Using bisect module
+   - Custom comparator
+   - Finding insertion point
+
+### Object-Oriented Programming (`oop/`)
+1. [Person Class Implementation](oop/person_class.py)
    - Basic class structure
    - Property decorators
    - Magic methods
@@ -138,7 +171,7 @@ This repository contains a collection of commonly asked Python interview questio
 1. Each file contains multiple implementations of the same problem
 2. Run any file directly to see examples and performance comparisons:
    ```bash
-   python3 filename.py
+   python3 category/filename.py
    ```
 3. Each implementation includes:
    - Problem statement
